@@ -1,350 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy | InvoGo</title>
-  <meta
-    name="description"
-    content="Privacy Policy for InvoGo by Cooba Dev."
-  />
-  <style>
-    :root {
-      --bg: #f6f7fb;
-      --surface: #ffffff;
-      --text: #171923;
-      --muted: #5c6470;
-      --border: #d9deea;
-      --accent: #1f6feb;
-      --accent-soft: #eaf2ff;
-      --shadow: 0 18px 48px rgba(23, 25, 35, 0.08);
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #f8f9fc 0%, #eef2f8 100%);
-      color: var(--text);
-      line-height: 1.65;
-    }
-
-    .wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .hero {
-      padding: 32px 28px 20px;
-      background: linear-gradient(135deg, #ffffff 0%, #f3f7ff 100%);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-    }
-
-    h1 {
-      margin: 0 0 10px;
-      font-size: 36px;
-      line-height: 1.15;
-    }
-
-    .subtitle {
-      margin: 0;
-      color: var(--muted);
-      max-width: 700px;
-      font-size: 16px;
-    }
-
-    .meta {
-      margin-top: 18px;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    .content {
-      padding: 8px 28px 32px;
-    }
-
-    h2 {
-      margin: 28px 0 10px;
-      font-size: 22px;
-      line-height: 1.25;
-    }
-
-    p, li {
-      font-size: 16px;
-      margin: 0 0 12px;
-    }
-
-    ul {
-      margin: 0 0 16px 20px;
-      padding: 0;
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    .footer {
-      padding: 22px 28px 30px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 14px;
-      background: #fcfdff;
-    }
-
-    @media (max-width: 640px) {
-      .wrap {
-        padding: 16px 12px 40px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | InvoGo</title>
+    <meta
+      name="description"
+      content="Privacy Policy for InvoGo by Cooba Dev, covering local device storage, exports, privacy rights, and contact details."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --background: hsl(0 0% 100%);
+        --foreground: hsl(150 12% 12%);
+        --muted: hsl(150 8% 96%);
+        --muted-foreground: hsl(150 8% 35%);
+        --border: hsl(150 10% 86%);
+        --primary: hsl(147 57% 40%);
       }
 
-      .hero,
-      .content,
-      .footer {
-        padding-left: 18px;
-        padding-right: 18px;
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--foreground);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.65;
+      }
+
+      main {
+        margin: 0 auto;
+        max-width: 860px;
+        padding: 40px 20px 72px;
+      }
+
+      header {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 20px;
+        margin-bottom: 28px;
       }
 
       h1 {
-        font-size: 30px;
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 2.8rem);
+        line-height: 1.1;
       }
 
       h2 {
-        font-size: 20px;
+        margin: 0 0 10px;
+        font-size: 1.1rem;
       }
-    }
-  </style>
-</head>
-<body>
-  <main class="wrap">
-    <article class="card">
-      <header class="hero">
-        <div class="badge">Privacy Policy</div>
-        <h1>Privacy Policy for InvoGo</h1>
-        <p class="subtitle">
-          This Privacy Policy explains how InvoGo handles information when you use the app.
-          InvoGo is provided by Cooba Dev.
-        </p>
-        <p class="meta">
-          <strong>Provider:</strong> Cooba Dev<br />
-          <strong>Contact:</strong> <a href="mailto:coob-dev@outlook.com">coob-dev@outlook.com</a><br />
-          <strong>Last updated:</strong> 23 April 2026
-        </p>
+
+      p,
+      li {
+        color: var(--muted-foreground);
+        font-size: 1rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--primary);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .updated {
+        margin-top: 12px;
+      }
+
+      section {
+        border: 1px solid var(--border);
+        background: var(--muted);
+        padding: 20px;
+        margin-top: 16px;
+      }
+
+      ul {
+        margin: 10px 0 0;
+        padding-left: 20px;
+      }
+
+      strong {
+        color: var(--foreground);
+      }
+
+      a {
+        color: var(--primary);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Legal</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: 23 April 2026</p>
       </header>
 
-      <section class="content">
-        <h2>1. Who we are</h2>
+      <section>
         <p>
-          InvoGo is an invoice creation and document export app provided by Cooba Dev
-          (“we”, “us”, “our”). This Privacy Policy describes how information is processed
-          when you use InvoGo.
-        </p>
-
-        <h2>2. Scope of this Privacy Policy</h2>
-        <p>
-          This Privacy Policy applies to the InvoGo mobile app and any static privacy page
-          published for the app, including a GitHub-hosted version of this policy.
-        </p>
-
-        <h2>3. How InvoGo works</h2>
-        <p>
-          InvoGo is designed to work primarily on your device. Based on the app’s current
-          implementation, information you enter into the app is generally stored locally on
-          your device or in your browser storage, rather than being uploaded to a dedicated
-          account-based cloud service operated by us.
-        </p>
-
-        <h2>4. Information processed by the app</h2>
-        <p>Depending on how you use InvoGo, the app may process information such as:</p>
-        <ul>
-          <li>your business or trading name;</li>
-          <li>your contact details, address details, bank details, and invoice settings;</li>
-          <li>client names and client address information that you enter;</li>
-          <li>invoice details such as invoice numbers, job descriptions, dates, prices, tax settings, and totals;</li>
-          <li>generated invoice previews, PDFs, or other exported files you choose to create;</li>
-          <li>preferences and settings used to customise invoices and app behaviour.</li>
-        </ul>
-
-        <h2>5. Where your information is stored</h2>
-        <p>
-          InvoGo currently stores user-entered invoice and settings data locally on your
-          device or in your browser storage. We do not currently provide an account system
-          or an always-on remote syncing service for this data.
-        </p>
-        <p>
-          This means the information you enter typically remains under your control on the
-          device you use, unless you choose to export, share, email, print, back up, or
-          otherwise send it elsewhere.
-        </p>
-
-        <h2>6. When information may leave your device</h2>
-        <p>Your information may leave your device only when you take an action such as:</p>
-        <ul>
-          <li>exporting or saving an invoice or PDF file;</li>
-          <li>sharing a file using your device’s share features;</li>
-          <li>emailing an invoice or document to someone;</li>
-          <li>printing a document through a connected service or device;</li>
-          <li>backing up your device or browser data using third-party tools or platforms.</li>
-        </ul>
-        <p>
-          If you use third-party apps, email providers, printers, cloud storage services,
-          or operating system sharing tools, those third parties may process your data under
-          their own privacy policies and terms.
-        </p>
-
-        <h2>7. Information we do not currently collect through a dedicated backend</h2>
-        <p>
-          Based on the current version of InvoGo, we do not currently operate a dedicated
-          backend account system that routinely collects and stores your invoice content on
-          our servers for syncing or account management.
-        </p>
-        <p>
-          We also do not currently require you to create a user account to use the core app
-          functions.
-        </p>
-
-        <h2>8. Device permissions and platform features</h2>
-        <p>
-          InvoGo may rely on device features or permissions where relevant, for example to
-          access files, save documents, share exports, or work with images you choose to use.
-          Any such access is used to provide the feature you request.
-        </p>
-        <p>
-          Permission prompts are controlled by your device operating system, and you can
-          usually manage them in your device settings.
-        </p>
-
-        <h2>9. Legal basis for processing</h2>
-        <p>
-          Where UK data protection law applies, our basis for processing is generally that:
-        </p>
-        <ul>
-          <li>processing is necessary to provide the app functions you request;</li>
-          <li>processing is necessary for our legitimate interests in operating, maintaining, and improving the app; and</li>
-          <li>in some cases, processing is based on your consent, such as where your device requests permission for access to certain features.</li>
-        </ul>
-
-        <h2>10. Data retention</h2>
-        <p>
-          Because InvoGo is local-first, data you enter may remain stored on your device or
-          in your browser storage until you delete it, clear app/browser data, uninstall the
-          app, reset your device, or overwrite the stored information.
-        </p>
-        <p>
-          Exported files, emailed invoices, printed copies, or backups may remain available
-          in the places where you save or send them, subject to the settings and policies of
-          those services or devices.
-        </p>
-
-        <h2>11. Data security</h2>
-        <p>
-          We aim to design the app so that information is handled with reasonable care.
-          However, no method of electronic storage, transmission, or device usage can be
-          guaranteed to be completely secure.
-        </p>
-        <p>
-          You are responsible for securing your own device, email account, backups, exported
-          files, and any third-party services you use in connection with InvoGo.
-        </p>
-
-        <h2>12. Your responsibilities</h2>
-        <p>
-          You are responsible for reviewing the information you enter into InvoGo, including
-          invoice content, client details, tax settings, payment details, and exported
-          documents, and for ensuring that your use of the app complies with applicable law.
-        </p>
-
-        <h2>13. Children’s privacy</h2>
-        <p>
-          InvoGo is not directed at children. We do not knowingly seek to collect personal
-          data from children through a dedicated account system in the current version of the
-          app. If you believe a child has provided personal information in connection with the
-          app, please contact us at
-          <a href="mailto:coob-dev@outlook.com">coob-dev@outlook.com</a>.
-        </p>
-
-        <h2>14. Your rights</h2>
-        <p>
-          Depending on your circumstances and applicable law, you may have rights relating to
-          personal data, including rights to access, correct, erase, restrict, or object to
-          certain processing.
-        </p>
-        <p>
-          Because InvoGo currently stores most entered data locally on your own device, you
-          can often exercise practical control directly by editing or deleting that data in
-          the app, deleting exported files, or removing app/browser storage from your device.
-        </p>
-        <p>
-          If you contact us about privacy matters, we will do our best to respond in line
-          with applicable legal requirements.
-        </p>
-
-        <h2>15. Third-party services</h2>
-        <p>
-          If you choose to use third-party email apps, storage providers, printer services,
-          file-sharing tools, app stores, or device backup services in connection with InvoGo,
-          your information may also be handled by those third parties. Their practices are
-          governed by their own terms and privacy policies, not this Privacy Policy.
-        </p>
-
-        <h2>16. International transfers</h2>
-        <p>
-          If you email, share, store, back up, or otherwise transmit files or data using
-          third-party services, your information may be transferred outside the UK depending
-          on the providers you choose to use.
-        </p>
-
-        <h2>17. Changes to this Privacy Policy</h2>
-        <p>
-          We may update this Privacy Policy from time to time to reflect changes to the app,
-          legal requirements, or operational needs. The updated version will be posted at the
-          relevant public policy URL and will show the latest “Last updated” date.
-        </p>
-
-        <h2>18. Contact</h2>
-        <p>
-          If you have questions about this Privacy Policy or privacy matters relating to
-          InvoGo, please contact:
-        </p>
-        <p>
-          <strong>Cooba Dev</strong><br />
-          Email: <a href="mailto:coob-dev@outlook.com">coob-dev@outlook.com</a>
-        </p>
-
-        <h2>19. Governing framework</h2>
-        <p>
-          This Privacy Policy is intended to be read in accordance with applicable UK data
-          protection principles and relevant laws of England and Wales.
+          This Privacy Policy explains how <strong>Cooba Dev</strong> handles information when you use <strong>InvoGo</strong> (the <strong>“App”</strong>). By downloading, accessing, or using the App, you acknowledge how information is handled as described in this policy.
         </p>
       </section>
 
-      <footer class="footer">
-        © Cooba Dev — InvoGo Privacy Policy
-      </footer>
-    </article>
-  </main>
-</body>
+      <section>
+        <h2>1. Who provides the App</h2>
+        <p>
+          InvoGo is provided by <strong>Cooba Dev</strong>. References to “we”, “us”, or “our” in this policy mean Cooba Dev as the publisher of the App.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. What information the App processes</h2>
+        <p>Depending on how you use the App, it may process information such as:</p>
+        <ul>
+          <li>business details you enter, such as your trading name, address, logo, contact details, payment details, currency, and tax preferences;</li>
+          <li>invoice information you create, such as customer names, addresses, invoice numbers, dates, descriptions, payment terms, references, tax information, and amounts;</li>
+          <li>documents and PDF files generated by the App for previewing, saving, printing, emailing, or sharing; and</li>
+          <li>limited technical storage information required for the App to remember your settings and invoice records on your device.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. How information is stored</h2>
+        <p>
+          The App currently stores most information locally on your device or in your browser storage. The App does <strong>not</strong> currently require you to create an account and does <strong>not</strong> currently provide a dedicated backend service for routine syncing of your invoice data.
+        </p>
+        <p>
+          Because storage is local-first, you are responsible for maintaining access to your device, keeping backups where needed, and managing any files you export or share.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. When information may leave your device</h2>
+        <p>
+          Information may leave your device only when <strong>you choose</strong> to do something with it, for example by generating a PDF, saving a file, attaching an invoice to an email, printing it, sharing it through another app, or otherwise exporting it from the App. Once you export or share a file, it may be handled by third-party apps, services, platforms, printers, email providers, operating systems, or storage tools chosen by you.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. How information is used</h2>
+        <p>The App processes information only to provide its core functionality, including to:</p>
+        <ul>
+          <li>create, edit, store, and organise invoices;</li>
+          <li>remember your business, payment, and tax settings;</li>
+          <li>generate invoice PDFs and related files for preview, saving, printing, emailing, or sharing; and</li>
+          <li>maintain invoice numbering and app preferences on your device.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Lawful basis and user control</h2>
+        <p>
+          Where UK data protection law applies, the App processes information on the basis that it is necessary to provide the functionality you actively request when using the App, and on the basis of your own actions and choices when you enter, save, export, print, email, or share information.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Data retention</h2>
+        <p>
+          Your information remains stored locally until you delete it, clear the App’s local data, remove the App, or overwrite it with new information. Exported files, shared files, printed copies, and emailed attachments may remain available in the destination you chose until you remove them there.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Sharing with third parties</h2>
+        <p>
+          Cooba Dev does not currently receive your invoice content through a dedicated backend service as part of the App’s normal operation. However, third parties may process your information if you intentionally use external tools or services such as email, cloud storage, printing, file sharing, device backup systems, or platform-level services on your phone, tablet, or computer.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Security</h2>
+        <p>
+          Reasonable steps are taken in the App’s design to keep information local to your device where possible. However, no device, browser, operating system, email service, sharing service, or storage medium can be guaranteed completely secure. You should protect your device with appropriate passwords, biometrics, updates, backups, and anti-malware protections where relevant.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Children’s privacy</h2>
+        <p>
+          The App is intended as a business invoicing tool and is not directed at children. It should not knowingly be used by children to submit personal information through the App.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. Your rights</h2>
+        <p>
+          Subject to applicable law, you may have rights to request access to personal information, correction of inaccurate information, erasure, restriction of processing, objection to processing, and portability. Because the App currently stores most information locally under your control, many of these rights can often be exercised directly by editing or deleting the stored data on your own device or by contacting us if you have a question about this policy.
+        </p>
+      </section>
+
+      <section>
+        <h2>12. International transfers</h2>
+        <p>
+          The App itself does not currently perform routine remote transfers of your invoice data. If you export or share files using third-party services, those services may transfer or store information outside the UK depending on the provider you choose and the way their systems operate.
+        </p>
+      </section>
+
+      <section>
+        <h2>13. Changes to this policy</h2>
+        <p>
+          We may update this policy from time to time to reflect changes to the App, legal requirements, or publishing arrangements. The latest version should be made available on the public privacy policy page linked from the App and associated public materials.
+        </p>
+      </section>
+
+      <section>
+        <h2>14. Contact</h2>
+        <p>
+          For privacy questions or requests relating to InvoGo, you can contact: <strong>coob-dev@outlook.com</strong>.
+        </p>
+        <p>Publisher / creator: <strong>Cooba Dev</strong></p>
+      </section>
+    </main>
+  </body>
 </html>
